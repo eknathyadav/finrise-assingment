@@ -62,6 +62,9 @@ Response :
 {"message": "{\"stream\":\"btcusd_perp@bookTicker\",\"data\":{\"u\":867676671851,\"e\":\"bookTicker\",\"s\":\"BTCUSD_PERP\",\"ps\":\"BTCUSD\",\"b\":\"56876.5\",\"B\":\"2235\",\"a\":\"56876.6\",\"A\":\"489\",\"T\":1709072332098,\"E\":1709072332105}}"}
 
 
+Steps to setup the project
+
+
 ## Project Setup 
 
 
