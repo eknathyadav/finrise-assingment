@@ -7,10 +7,6 @@ from asgiref.sync import sync_to_async
 class LiveFeedConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         if self.scope["user"].is_anonymous:
-            # Reject the connection
-            # await self.send(text_data=json.dumps({
-            #     'message': "You are not authorized to subscribe to live feed"
-            # }))
             self.group_name = None
             await self.close()
         else:
