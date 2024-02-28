@@ -30,8 +30,8 @@ class LiveFeedConsumer(AsyncWebsocketConsumer):
 
     async def disconnect(self, code):
 
-        # if self.group_name:
-        await self.channel_layer.group_discard(
-            self.group_name,
-            self.channel_name
-        )
+        if self.group_name:
+            await self.channel_layer.group_discard(
+                self.group_name,
+                self.channel_name
+            )
